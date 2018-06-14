@@ -1,0 +1,34 @@
+﻿<Window x:Class="LilliesDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LilliesDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="586.299" Width="741.526">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="363*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lstCustomers" HorizontalAlignment="Left" Height="192" Margin="92,35,0,0" VerticalAlignment="Top" Width="209" Initialized="lstCustomers_Initialized" DisplayMemberPath="Key" SelectedValuePath="Value" SelectionChanged="lstCustomers_SelectionChanged"/>
+        <Label x:Name="lblCustomers" Content="Customers:" HorizontalAlignment="Left" Margin="18,35,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreateCustomer" Content="Create Customer" HorizontalAlignment="Left" Margin="92,232,0,0" VerticalAlignment="Top" Width="103" Height="26" Click="btnCreateCustomer_Click"/>
+        <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Margin="312,44,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="364,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+        <Label x:Name="lblPhoneNumber" Content="Phone #:" HorizontalAlignment="Left" Margin="306,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPhoneNumber" HorizontalAlignment="Left" Height="23" Margin="364,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label x:Name="lblAddress" Content="Address:" HorizontalAlignment="Left" Margin="303,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="23" Margin="364,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332"/>
+        <ListBox x:Name="lstDeliveries" HorizontalAlignment="Left" Height="203" Margin="92,271,0,0" VerticalAlignment="Top" Width="209" DisplayMemberPath="Key" SelectedValuePath="Value" SelectionChanged="lstDeliveries_SelectionChanged"/>
+        <Label x:Name="lblDeliveries" Content="Deliveries:" HorizontalAlignment="Left" Margin="26,271,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDeliveryDate" Content="Delivery Date:" HorizontalAlignment="Left" Margin="345,279,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDeliveryDate" HorizontalAlignment="Left" Height="23" Margin="433,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label x:Name="lblLilliesDelivered" Content="# of Lillies Delivered:" HorizontalAlignment="Left" Margin="312,303,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLilliesDelivered" HorizontalAlignment="Left" Height="23" Margin="433,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <Label x:Name="lblNote" Content="Note:" HorizontalAlignment="Left" Margin="389,335,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreateDelivery" Content="Create Delivery" HorizontalAlignment="Left" Margin="200,232,0,0" VerticalAlignment="Top" Width="103" Height="26" Click="btnCreateDelivery_Click" IsEnabled="False"/>
+        <TextBox x:Name="txtNote" HorizontalAlignment="Left" Height="136" Margin="433,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" AcceptsReturn="True"/>
+
+    </Grid>
+</Window>
